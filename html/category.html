@@ -3,9 +3,83 @@
   <head>
     <meta charset="utf-8" />
     <title>Title of the document</title>
+    <link href="../css/category.css" rel="stylesheet" />
+    <script src="../js/category.js"></script>
   </head>
-
   <body>
-    The content of the document......
+    <div id="root">
+      <div class="header">
+        <div class="logo">
+          <a href="https://www.rakuten.co.jp/">
+            <img src="https://r.r10s.jp/com/img/logo/rakuten_group_red.svg" alt="楽天市場" />
+          </a>
+        </div>
+        <div class="search">
+          <form>
+            <div class="search-wrapper">
+              <div class="serach-left-wrapper">
+                <div class="text-contents">
+                  <input type="text" placeholder="キーワードから探す" />
+                </div>
+                <div class="select-contents">
+                  <div class="select-button">
+                    <span class="selected-category"></span>
+                    <span>▼</span>
+                  </div>
+                  <select class="select-category">
+                    <option value="0">すべてのジャンル</option>
+                    <option value="551177">メンズファッション</option>
+                    <option value="100371">レディースファッション</option>
+                    <option value="558885">靴</option>
+                    <option value="216131">バッグ・小物・ブランド雑貨</option>
+                    <option value="216129">ジュエリー・アクセサリー</option>
+                    <option value="558929">腕時計</option>
+                    <option value="100433">インナー・下着・ナイトウェア</option>
+                    <option value="100533">キッズ・ベビー・マタニティ</option>
+                    <option value="100227">食品</option>
+                    <option value="551167">スイーツ・お菓子</option>
+                    <option value="100316">水・ソフトドリンク</option>
+                    <option value="100317">ワイン</option>
+                    <option value="510915">ビール・洋酒</option>
+                    <option value="510901">日本酒・焼酎</option>
+                    <option value="100026">パソコン・周辺機器</option>
+                    <option value="564500">スマートフォン・タブレット</option>
+                    <option value="211742">TV・オーディオ・カメラ</option>
+                    <option value="562637">家電</option>
+                    <option value="565004">光回線・モバイル通信</option>
+                    <option value="101240">CD・DVD</option>
+                    <option value="112493">楽器・音響機器</option>
+                    <option value="101070">スポーツ・アウトドア</option>
+                    <option value="101077">ゴルフ用品</option>
+                    <option value="100804">インテリア・寝具・収納</option>
+                    <option value="215783">日用品雑貨・文房具・手芸</option>
+                    <option value="558944">キッチン用品・食器・調理器具</option>
+                    <option value="100005">花・ガーデン・DIY</option>
+                    <option value="101213">ペット・ペットグッズ</option>
+                    <option value="100938">ダイエット・健康</option>
+                    <option value="551169">医薬品・コンタクト・介護</option>
+                    <option value="100939">美容・コスメ・香水</option>
+                    <option value="566382">おもちゃ</option>
+                    <option value="101205">テレビゲーム</option>
+                    <option value="200162">本・雑誌・コミック</option>
+                    <option value="101114">車・バイク</option>
+                    <option value="503190">車用品・バイク用品</option>
+                    <option value="101438">サービス・リフォーム</option>
+                    <option value="111427">住宅・不動産</option>
+                    <option value="101381">カタログギフト・チケット</option>
+                    <option selected="" value="303656">現在のジャンル</option>
+                  </select>
+                </div>
+              </div>
+              <div class="serach-right-wrapper">
+                <div class="search-button">
+                  <input type="submit" />
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
