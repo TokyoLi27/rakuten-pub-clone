@@ -13,8 +13,7 @@
         <div class="bannerOuter"></div>
         <div class="bannerInner">
             <a href="https://globalexpress.rakuten.co.jp/?scid=rmp_ko_ich_top_unpaid&lang=ko">
-                <img src="https://r.r10s.jp/com/img/global/hd_banner_pc_common_global_rgx_ko.png"
-                alt="bannerInner" >
+                <img src="https://r.r10s.jp/com/img/global/hd_banner_pc_common_global_rgx_ko.png" alt="bannerInner" >
             </a>
         </div>
     </div>
@@ -33,116 +32,339 @@
             border: none;
             vertical-align: text-bottom;
         }
-        a{
+
+
+        .a1{
             text-decoration-line: none;
             color: white;
             border-bottom: solid white;
             float:left;
         }
-        .mobileMode{
-            padding-left: 10%;
+
+        span{
+            color: white;
+            padding-bottom: 50px;
         }
+
+        .superDeal, .netSuper, .rakutenRebate ,.groupMenu{
+            font-size: 60%;
+        }
+
+        .groupMenu::after{display: inline-block; content: ""; clear: both;}
+        .groupMenu > li{position:relative; float:left;}
+        .groupMenu > li > a{display:inline-block; }
+        .groupMenu>li:hover.depth{display: inline-block;}
+        .groupMenu > li:hover .depth {display:inline-block;}
+        .groupMenu .depth{display:none; position:absolute; text-align: center;}
+        .groupMenu .depth a{display:inline-block;}
+
+        .groupMenu{
+            background-color: gray;
+            color: white;
+            font-size: 90%;
+            text-align: center;
+            display: inline-block;
+            border: none;
+            vertical-align: bottom;
+            float: bottom;
+        }
+
+        .depth{
+            text-decoration-line: none;
+            color: white;
+            border-bottom: solid white;
+            float:left;
+            font-size: 100%;
+            width: 280%;
+            background-color: gray;
+        }
+
+        .graTitle{
+            text-decoration-line: none;
+            font-size: 110%;
+            color: red;
+        }
+
+        .gra{
+            text-decoration-line: none;
+            color: white;
+        }
+
+        .globalSiteChange::after{display: block; content: ""; clear: both;}
+        .globalSiteChange > li{position:relative; float:left;}
+        .globalSiteChange > li > a{display:block; }
+        .globalSiteChange>li:hover.depth{display: block;}
+        .globalSiteChange > li:hover .depth {display:block;}
+        .globalSiteChange .depth{display:none; position:absolute; text-align: center;}
+        .globalSiteChange .depth a{display:block;}
+
+        .globalSiteChange{
+            background-color: gray;
+            color: white;
+            font-size: 90%;
+            text-align: center;
+            display: inline-block;
+            border: none;
+            vertical-align: text-bottom;
+            float: bottom;
+        }
+
+        .rakutenImg{
+            width: 5%;
+            height: 8%;
+            float: left;
+        }
+
+        .keyworSearcher{
+            width: 70%;
+            height: 5%;
+            margin: 0.5%;
+            float: left;
+        }
+
+
+        .searchBtn{
+            width: 3%;
+            height: 5%;
+            background-color: red;
+            margin: 0.5%;
+            color: white;
+            font-size: 130%;
+            text-align: center;
+            display: inline-block;
+            border: none;
+            vertical-align: text-bottom;
+        }
+
+        .searchBtnA{
+            text-decoration-line: none;
+            color: white;
+            float:left;
+        }
+
+        .sp1{
+            color: black;
+        }
+
     </style>
+
+
+
     <div class="headerMenuBar">
         <button class="mobileMode">
-            <a href="https://network.mobile.rakuten.co.jp/">
+            <a class="a1" href="https://network.mobile.rakuten.co.jp/">
                 モバイル
             </a>
         </button>
         <button class="rankingMenu">
-            <a href="https://naver.co.kr/">
+            <a class="a1" href="https://naver.co.kr/">
                 ランキング
             </a>
         </button>
         <button class="superDeal">
-            <a href="https://naver.co.kr/">
+            <a class="a1" href="https://naver.co.kr/">
                 スーパーDEAL
             </a>
         </button>
         <button class="fashion">
-            <a href="https://naver.co.kr/">
+            <a class="a1" href="https://naver.co.kr/">
                 ファッション
             </a>
         </button>
         <button class="netSuper">
-            <a href="https://naver.co.kr/">
+            <a class="a1" href="https://naver.co.kr/">
                 ネットスーパー
             </a>
         </button>
         <button class="rakutenBig">
-            <a href="https://naver.co.kr/">
+            <a class="a1" href="https://naver.co.kr/">
                 楽天ビッグ
             </a>
         </button>
         <button class="rakuten24">
-            <a href="https://naver.co.kr/">
+            <a class="a1" href="https://naver.co.kr/">
                 楽天24
             </a>
         </button>
         <button class="rakutenRebate">
-            <a href="https://naver.co.kr/">
+            <a class="a1" href="https://naver.co.kr/">
                 リーベイツ
             </a>
         </button>
         <button class="rakutenRoom">
-            <a href="https://naver.co.kr/">
+            <a class="a1" href="https://naver.co.kr/">
                 ROOM
             </a>
         </button>
         <button class="rakutenCard">
-            <a href="https://naver.co.kr/">
+            <a class="a1" href="https://naver.co.kr/">
                 カード
             </a>
         </button>
         <button class="bookDeal">
-            <a href="https://naver.co.kr/">
+            <a class="a1" href="https://naver.co.kr/">
                 ブックス
             </a>
         </button>
         <button class="mobileBook">
-            <a href="https://naver.co.kr/">
+            <a class="a1" href="https://naver.co.kr/">
                 電子KOBO
             </a>
         </button>
         <button class="rakutenTravle">
-            <a href="https://naver.co.kr/">
+            <a class="a1" href="https://naver.co.kr/">
                 トラベル
             </a>
         </button>
         <button class="rakuma">
-            <a href="https://naver.co.kr/">
+            <a class="a1" href="https://naver.co.kr/">
                 楽間
             </a>
         </button>
         <button class="rakutenInvest">
-            <a href="https://naver.co.kr/">
+            <a class="a1" href="https://naver.co.kr/">
                 証券
             </a>
         </button>
         <button class="rakutenBank">
-            <a href="https://naver.co.kr/">
+            <a class="a1" href="https://naver.co.kr/">
                 銀行
             </a>
         </button>
-        <button class="rakutenSyutsuten">
-            <a href="https://naver.co.kr/">
-                楽天出店
-            </a>
-        </button>
         <button class="help">
-            <a href="https://naver.co.kr/">
+            <a class="a1" href="https://naver.co.kr/">
                 ヘルプ
             </a>
         </button>
-        <button class="groupMenu">
-            <a href="https://naver.co.kr/">
-                グループ
+        <button class="rakutenSyutsuten">
+            <a class="a1" href="https://naver.co.kr/">
+                楽天出店
             </a>
         </button>
-        <button class="globalSiteChange">
-            <a href="https://naver.co.kr/">
-                Global
-            </a>
-        </button>
+
+        <ul class="groupMenu">
+            <li>
+                <a class = "a1" href="#">グループ</a>
+                <ul class="depth">
+                    <li><a class = "graTitle" href="#">お買い物</a></li>
+                    <ll><a class = "gra" href="https://naver.co.kr/">スーパーDEAL</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">ランキング</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">あす楽</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">Rmagazine</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">ROOM</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">クーポン</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">ギフト</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">定期購入</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">ラクマ</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">楽天市場アプリ</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">ふるさと納税</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">リーベイツ</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">RAXY（ラクシー）</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">NBA ZONE</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">Ｊリーグ公式ストア</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">Rakuten Fashion</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">ネットスーパー</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">楽天ビック</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">楽天24</a></ll>
+                    <li><a class = "graTitle" href="#">旅行・暮らし</a></li>
+                    <ll><a class = "gra" href="https://naver.co.kr/">楽天トラベル</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">Viber</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">楽天でんわ</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">楽天でんわ</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">楽天ウェブ検索</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">Infoseek</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">楽天車検</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">楽天Car</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">楽天カーシェア</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">楽券（電子チケット）</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">楽天ガス</a></ll>
+                    <li><a class = "graTitle" href="#">本・エンタメ</a></li>
+                    <ll><a class = "gra" href="https://naver.co.kr/">楽天ブックス</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">楽天Kobo</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">楽天toto</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">楽天チケット</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">楽天競馬</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">楽天宝くじ</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">楽天GORA</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">Rakuten TV</a></ll>
+                    <li><a class = "graTitle" href="#">金融・マネー</a></li>
+                    <ll><a class = "gra" href="https://naver.co.kr/">楽天カード</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">楽天証券</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">楽天証券確定拠出年金</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">楽天生命</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">楽天損保</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">楽天銀行</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">楽天銀行住宅ローン</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">楽天ポイントカード</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">楽天の保険比較</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">自動車保険一括見積り</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">楽天超かんたん保険</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">楽天ペイアプリ</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">楽天ペイ(オンライン)</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">楽天Edy</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">ペット保険</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">楽天ウォレット</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">楽天保険の総合窓口</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">楽天トラベル</a></ll>
+                    <li><a class = "graTitle" href="#">おすすめキャンペーン</a></li>
+                    <ll><a class = "gra" href="https://naver.co.kr/">楽天トラベル</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">イチオシクーポン配布中！</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">楽天モバイル</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">初めての申込で3,000ポイント！</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">楽天銀行</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">口座開設と入金でもれなく1,000ポイント！</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">楽天カード</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">年会費永年無料！ キャンペーン実施中</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">楽天生命</a></ll>
+                    <ll><a class = "gra" href="https://naver.co.kr/">がん保険プレゼント！</a></ll>
+                </ul>
+            </ul>
+        </li>
+
+
+            
+        <ul class="globalSiteChange">
+            <li>
+                <a class = "a1" href="#">Global</a>
+                <ul class="depth">
+                    <li><a class = "graTitle" href="#">アジア太平洋</a></li>
+                    <ll><a class = "gra" href="https://naver.co.kr/">日本</a></li>
+                    <ll><a class = "gra" href="https://naver.co.kr/">台湾</a></li>
+                    <li><a class = "graTitle" href="#">ヨーロッパ</a></li>
+                    <ll><a class = "gra" href="https://naver.co.kr/">ドイツ</a></li>
+                    <ll><a class = "gra" href="https://naver.co.kr/">フランス</a></li>
+                    <li><a class = "graTitle" href="#">南北アメリカ</a></li>
+                    <ll><a class = "gra" href="https://naver.co.kr/">アメリカ</a></li>
+                </ul>
+            </li>
+        </ul>
     </div>
+
+    <div class="keywordSearcherGroup">
+
+        <div class="rakutenLogo">
+            <a href="https://www.rakuten.co.jp/">
+                <img class="rakutenImg" src="https://r.r10s.jp/com/img/logo/rakuten_group_red.svg" alt="楽天市場">
+              </a>
+        </div>
+
+        <div>
+            <input type="text" placeholder="キーワード検索" class="keyworSearcher"/>
+        </div>
+
+        <button class="searchBtn">
+            <a class="searchBtnA" href="">検索</a>
+        </button>
+
+
+        <span class="sp1">買い物かご</span>
+        <span class="sp1">お知らせ</span>
+        <span class="sp1">閲覧履歴</span>
+        <span class="sp1">お気に入り</span>
+        <span class="sp1">購入履歴</span>
+
+
+    </div>
+
+
 </html>
