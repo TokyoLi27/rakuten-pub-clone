@@ -1,17 +1,40 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-size: 11px;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  outline: none;
+}
+a:hover {
+  color: #bf0000;
+  text-decoration: underline;
+}
+a:active {
+  color: #f23;
 }
 
 .header {
   width: 100%;
-  clear: both;
+  overflow: hidden;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
 }
 
 .logo {
   width: 106px;
   height: 36px;
   white-space: nowrap;
-  float: left;
+  /* float: left; */
 }
 
 .logo a img {
@@ -23,8 +46,9 @@
 .search {
   width: 336px;
   height: 36px;
-  float: left;
   margin-left: 15px;
+  /* float: left; */
+  flex: 1;
 }
 
 .search-wrapper {
@@ -32,7 +56,8 @@
 }
 
 .serach-left-wrapper {
-  width: 300px;
+  /* width: 300px; */
+  width: calc(100% - 36px);
   float: left;
   position: relative;
 }
@@ -74,7 +99,7 @@
   width: 100px;
   position: absolute;
   left: 5px;
-  top: 5px;
+  line-height: 32px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -111,4 +136,140 @@
   width: 100%;
   height: 100%;
   opacity: 0;
+}
+
+.header-banner {
+  background-color: #ff008c;
+  height: 50px;
+  text-align: center;
+}
+
+.info-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  background: #fcfbfb;
+}
+
+.breadcrumb {
+  line-height: 1rem;
+}
+.breadcrumb a {
+  font-weight: 400;
+}
+.breadcrumb .icon {
+  margin: 0 7px;
+  color: #666;
+  opacity: 0.7;
+}
+
+.prefecture-filter .help i.location {
+  width: 16px;
+  height: 16px;
+  background: url(https://r.r10s.jp/com/assets/resources/icon_locationfb2fd3e6f038ab690aa1d67f1d05ed62.svg) no-repeat 50%;
+  background-size: 100%;
+  display: inline-block;
+  font-weight: 400;
+  top: 4px;
+  left: 6px;
+  position: relative;
+}
+
+.prefecture-filter .help .link {
+  color: #848484;
+  position: relative;
+  left: -3px;
+}
+
+select {
+  height: 28px;
+  max-width: 100px;
+  text-indent: 5px;
+  color: #666;
+  background: #fff;
+  border: 1px solid #d8d8d8;
+  border-radius: 3px;
+  outline: none;
+}
+
+.hdr-function {
+  overflow: hidden;
+  /* float: left; */
+  margin-left: 30px;
+}
+
+.hdr-function li {
+  float: left;
+  text-align: center;
+  margin: 0 4px;
+}
+
+.hdr-function li a {
+  height: 40px;
+  color: #333;
+  text-decoration: none;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.hdr-function li a:hover {
+  opacity: 0.65;
+  text-decoration: none;
+  color: #333;
+}
+
+.hdr-function li a span {
+  width: 22px;
+  height: 22px;
+  margin: 0 auto 2px;
+  background: url('https://r.r10s.jp/com/img/home/header/haeder_sprite.png?v=1511191000') top left no-repeat;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}
+
+.hdr-function li a span.mybasket-icon {
+  background-position: -10px -184px;
+}
+
+.hdr-function li a span.notification-icon {
+  background-position: -10px -152px;
+}
+
+.hdr-function li a span.mycoupon-icon {
+  background-position: -10px -306px;
+}
+
+.hdr-function li a span.browse-icon {
+  background-position: -10px -216px;
+}
+
+.hdr-function li a span.bookmark-icon {
+  background-position: -10px -120px;
+}
+
+.hdr-function li a span.order-icon {
+  background-position: -10px -88px;
+}
+
+.guide {
+  margin-left: 10px;
+}
+
+.point-display-banner a img {
+  margin-left: 10px;
+  width: 130px;
+}
+
+.leadsentence {
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+  padding: 15px;
+  line-height: 1.15;
+}
+
+.leadsentence h1 {
+  font-size: 20px;
 }
