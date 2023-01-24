@@ -5,10 +5,34 @@
 </head>
 
 <body>
+    <div style="text-align: center;">
+        <span id="clock" style="color:gray; font-size: 100px;">clock</span>
+        <span id="apm" style="color:gray; font-size: 50px;">ampm</span>
+    </div>
 
     <script type="text/javascript">
+        var Target = document.getElementById("clock");
+        var Target_apm = document.getElementById("apm");
+        function clock() {
+            var time = new Date();
+            var hours = time.getHours();
+            var minutes = time.getMinutes();
+            var seconds = time.getSeconds();
+            var AmPm = "AM";
+            if (hours > 12) {
+                var AmPm = "PM";
+                hours %= 12;
+            }
 
-      </script>
+            Target.innerText =
+                `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes}:${seconds < 10 ? `0${seconds}` : seconds}`;
+
+            Target_apm.innerText = `${AmPm}`;
+
+        }
+        clock();
+        setInterval(clock, 1000); // 1초마다 실행
+    </script>
 
     <style type="text/css">
         .bannerOuter {
@@ -297,7 +321,7 @@
             margin: 0;
             padding: 0;
         }
-        
+
 
         .section input[id*="slide"] {
             display: none;
@@ -433,17 +457,17 @@
 
         .section input[id="slide01"]:checked~.slidewrap .slide-control>div:nth-child(1) {
             display: block;
-            color:white;
+            color: white;
         }
 
         .section input[id="slide02"]:checked~.slidewrap .slide-control>div:nth-child(2) {
             display: block;
-            color:white;
+            color: white;
         }
 
         .section input[id="slide03"]:checked~.slidewrap .slide-control>div:nth-child(3) {
             display: block;
-            color:white;
+            color: white;
         }
 
         .slide-pagelist {
@@ -476,7 +500,6 @@
         .section input[id="slide03"]:checked~.slidewrap .slide-pagelist>li:nth-child(3)>label {
             background: black;
         }
-
     </style>
 
     <div class="bannerOuter">
@@ -807,21 +830,249 @@
     </div>
 
 
-    <div class="subSlideBanner">
-        <a>
-            subSlideBanner
-        </a>
+    <div class="banner-container">
+        <div class="banner">
+            <div data-index=1>
+
+            </div>
+            <div data-index=2>
+
+            </div>
+            <div data-index=3>
+
+            </div>
+            <div data-index=4>
+
+            </div>
+        </div>
     </div>
+
+    <style>
+        .banner-container {
+            width: 100%;
+            height: 280px;
+            overflow: hidden;
+        }
+
+        .banner {
+            width: calc(100vw*4);
+            height: 100%;
+            display: flex;
+            animation: animation1 10s infinite;
+            -webkit-transition: all 0.5s cubic-bezier(1, .01, .32, 1);
+            -moz-transition: all 0.5s cubic-bezier(1, .01, .32, 1);
+            -o-transition: all 0.5s cubic-bezier(1, .01, .32, 1);
+            -ms-transition: all 0.5s cubic-bezier(1, .01, .32, 1);
+            transition: all 0.5s cubic-bezier(1, .01, .32, 1);
+        }
+
+        .banner>div {
+            width: 100vw;
+            height: 100%;
+        }
+
+        .banner>div:nth-child(1) {
+            background: url("https://r.r10s.jp/com/img/UXP/202301/js-banner-top/73d5ab09-4860-41d8-9c47-8e161263baa8/20230124_marathon_top_js_03_pre_314x314.gif") left,
+                url("https://r.r10s.jp/com/img/UXP/202301/js-banner-top/73d5ab09-4860-41d8-9c47-8e161263baa8/20230124_marathon_top_js_03_pre_314x314.gif"),
+                url("https://r.r10s.jp/com/img/UXP/202301/js-banner-top/73d5ab09-4860-41d8-9c47-8e161263baa8/20230124_marathon_top_js_03_pre_314x314.gif"),
+                url("https://r.r10s.jp/com/img/UXP/202301/js-banner-top/73d5ab09-4860-41d8-9c47-8e161263baa8/20230124_marathon_top_js_03_pre_314x314.gif");
+        }
+
+        .banner>div:nth-child(2) {
+            background: url("https://r.r10s.jp/com/img/UXP/202212/js-banner-top/01558745-da5e-4851-953b-7b058261a624/131423_314x314_yone_1207.jpg"),
+                url("https://r.r10s.jp/com/img/UXP/202212/js-banner-top/01558745-da5e-4851-953b-7b058261a624/131423_314x314_yone_1207.jpg"),
+                url("https://r.r10s.jp/com/img/UXP/202212/js-banner-top/01558745-da5e-4851-953b-7b058261a624/131423_314x314_yone_1207.jpg"),
+                url("https://r.r10s.jp/com/img/UXP/202212/js-banner-top/01558745-da5e-4851-953b-7b058261a624/131423_314x314_yone_1207.jpg");
+        }
+
+        .banner>div:nth-child(3) {
+            background: url("https://r.r10s.jp/com/img/UXP/202301/js-banner-top/ee493a53-3e8f-4a31-95c1-c3e7522f5864/early_bn_01_314x314_02.jpg"),
+                url("https://r.r10s.jp/com/img/UXP/202301/js-banner-top/ee493a53-3e8f-4a31-95c1-c3e7522f5864/early_bn_01_314x314_02.jpg"),
+                url("https://r.r10s.jp/com/img/UXP/202301/js-banner-top/ee493a53-3e8f-4a31-95c1-c3e7522f5864/early_bn_01_314x314_02.jpg"),
+                url("https://r.r10s.jp/com/img/UXP/202301/js-banner-top/ee493a53-3e8f-4a31-95c1-c3e7522f5864/early_bn_01_314x314_02.jpg");
+        }
+
+        .banner>div:nth-child(4) {
+            background: url("https://r.r10s.jp/com/img/UXP/202212/js-banner-top/a18a91ce-4043-432a-a87c-98ab15464a34/20230123_event_deal_314x314.gif"),
+                url("https://r.r10s.jp/com/img/UXP/202212/js-banner-top/a18a91ce-4043-432a-a87c-98ab15464a34/20230123_event_deal_314x314.gif"),
+                url("https://r.r10s.jp/com/img/UXP/202212/js-banner-top/a18a91ce-4043-432a-a87c-98ab15464a34/20230123_event_deal_314x314.gif"),
+                url("https://r.r10s.jp/com/img/UXP/202212/js-banner-top/a18a91ce-4043-432a-a87c-98ab15464a34/20230123_event_deal_314x314.gif");
+        }
+
+
+        @keyframes animation1 {
+            0% {
+                margin-left: 0
+            }
+
+            20% {
+                margin-left: 0
+            }
+
+            25% {
+                margin-left: -100%
+            }
+
+            45% {
+                margin-left: -100%
+            }
+
+            50% {
+                margin-left: -200%
+            }
+
+            70% {
+                margin-left: -200%
+            }
+
+            75% {
+                margin-left: -300%
+            }
+
+            95% {
+                margin-left: -300%
+            }
+
+            100% {
+                margin-left: 0
+            }
+        }
+
+        @keyframes animation2 {
+            0% {
+                margin-left: -100%
+            }
+
+            20% {
+                margin-left: -100%
+            }
+
+            25% {
+                margin-left: -200%
+            }
+
+            45% {
+                margin-left: -200%
+            }
+
+            50% {
+                margin-left: -300%
+            }
+
+            70% {
+                margin-left: -300%
+            }
+
+            75% {
+                margin-left: 0
+            }
+
+            95% {
+                margin-left: 0
+            }
+
+            100% {
+                margin-left: -100%
+            }
+        }
+
+        @keyframes animation3 {
+            0% {
+                margin-left: -200%
+            }
+
+            20% {
+                margin-left: -200%
+            }
+
+            25% {
+                margin-left: -300%
+            }
+
+            45% {
+                margin-left: -300%
+            }
+
+            50% {
+                margin-left: 0
+            }
+
+            70% {
+                margin-left: 0
+            }
+
+            75% {
+                margin-left: -100%
+            }
+
+            95% {
+                margin-left: -100%
+            }
+
+            100% {
+                margin-left: -200%
+            }
+        }
+
+        @keyframes animation4 {
+            0% {
+                margin-left: -300%
+            }
+
+            20% {
+                margin-left: -300%
+            }
+
+            25% {
+                margin-left: 0
+            }
+
+            45% {
+                margin-left: 0
+            }
+
+            50% {
+                margin-left: -100%
+            }
+
+            70% {
+                margin-left: -100%
+            }
+
+            75% {
+                margin-left: -200%
+            }
+
+            95% {
+                margin-left: -200%
+            }
+
+            100% {
+                margin-left: -300%
+            }
+        }
+    </style>
+
+    <script>
+        let interval;
+        let activeIndex = 1;
+
+        function changeActiveIndex() {
+            if (activeIndex > 3) {
+                activeIndex %= 4;
+            }
+            changeActiveBtn();
+            activeIndex += 1;
+        }
+        function changeActiveBtn() {
+            $('.list-button-item').removeClass('active');
+            $(`.list-button span:eq(${activeIndex})`).addClass('active');
+        }
+    </script>
 
     <div class="楽天スーパーDealSlideBanner">
         <a>
             楽天スーパーDEAL SlideBanner
-        </a>
-    </div>
-
-    <div class="人気商品ランキングSlideBanner">
-        <a>
-            人気商品ランキング SlideBanner
         </a>
     </div>
 
@@ -861,24 +1112,25 @@
         </a>
     </div>
 
-    <div class="官公庁からのお知らせ Banner">
-        <a>
-            官公庁からのお知らせ Banner
-        </a>
-    </div>
-
-    <div class="楽天グループのおすすめ特集 SlideBanner">
-        <a>
-            楽天グループのおすすめ特集 SlideBanner
-        </a>
+    <a style="float: left; margin: 10px; font-size: 20px;">
+        官公庁からのお知らせ
+    </a>
+    <div class="bannerOuter">
+        <div class="bannerOuter"></div>
+        <div class="bannerInner">
+            <a href="https://globalexpress.rakuten.co.jp/?scid=rmp_ko_ich_top_unpaid&lang=ko">
+                <img src="https://r.r10s.jp/com/img/thumb/200309/message/flash/campaign/government/1216_MyNumber.png"
+                style="width: 100%; height: 200px;"
+                    alt="bannerInner">
+            </a>
+        </div>
     </div>
 
     <div class="RakutenNbaBanner">
         <div class="bannerOuter"></div>
         <div class="bannerInner">
-            <a
-                href="https://rd.rakuten.co.jp/s/?R2=https%3A%2F%2Fac.ebis.ne.jp%2Ftr_set.php%3Fargument%3DZMhPE4GP%26ai%3Drgp_mno_004105&D2=3.8611.68708.911622.32391504&C3=db443cc19cc567407ff548167fb87879a0070e63">
-                <img src='https://r.r10s.jp/com/img/thumb/logo/pc_logo_footer_nba.svg' alt="bannerInner">
+            <a href="https://rd.rakuten.co.jp/s/?R2=https%3A%2F%2Fac.ebis.ne.jp%2Ftr_set.php%3Fargument%3DZMhPE4GP%26ai%3Drgp_mno_004105&D2=3.8611.68708.911622.32391504&C3=db443cc19cc567407ff548167fb87879a0070e63">
+                <img src='https://r.r10s.jp/com/img/thumb/logo/pc_logo_footer_nba.svg' alt="bannerInner" >
             </a>
         </div>
     </div>
