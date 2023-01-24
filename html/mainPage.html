@@ -5,35 +5,6 @@
 </head>
 
 <body>
-    <div style="text-align: center;">
-        <span id="clock" style="color:gray; font-size: 100px;">clock</span>
-        <span id="apm" style="color:gray; font-size: 50px;">ampm</span>
-    </div>
-
-    <script type="text/javascript">
-        var Target = document.getElementById("clock");
-        var Target_apm = document.getElementById("apm");
-        function clock() {
-            var time = new Date();
-            var hours = time.getHours();
-            var minutes = time.getMinutes();
-            var seconds = time.getSeconds();
-            var AmPm = "AM";
-            if (hours > 12) {
-                var AmPm = "PM";
-                hours %= 12;
-            }
-
-            Target.innerText =
-                `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes}:${seconds < 10 ? `0${seconds}` : seconds}`;
-
-            Target_apm.innerText = `${AmPm}`;
-
-        }
-        clock();
-        setInterval(clock, 1000); // 1초마다 실행
-    </script>
-
     <style type="text/css">
         .bannerOuter {
             width: 100%;
@@ -1070,67 +1041,305 @@
         }
     </script>
 
-    <div class="楽天スーパーDealSlideBanner">
-        <a>
-            楽天スーパーDEAL SlideBanner
+
+    <div style="width: 100%; margin: 20px;">
+        <a style="color: red; margin: 20px; font-size: 18px;">
+            楽天スーパーDEAL
         </a>
     </div>
 
-    <div class="Pickup! 注目商品 SlideBanner">
-        <a>
-            Pickup! 注目商品 SlideBanner
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- swiper슬라이더 메인컨테이너 -->
+<div class="swiper-container">
+  <!-- 보여지는 영역 -->
+  <div class="swiper-wrapper">
+    <!-- div class="swiper-slide" 를 추가하면된다 -->
+    <div class="swiper-slide">
+        <img src ="https://ias.r10s.jp/dst/ec/321177/19445289/1-1-1/c1bbe370e040781d9cc8d4ff6641a2e8.jpg">
+    </div>
+    <div class="swiper-slide">
+        <img src ="https://ias.r10s.jp/dst/ec/321177/19445295/1-1-1/e377ac05feb756a5c7c801cba88202bc.jpg">
+    </div>
+    <div class="swiper-slide">
+        <img src ="https://ias.r10s.jp/dst/ec/13719/19445305/1-1-1/3ce6e45d436e2b5eb2ed9bdb5acecb92.jpg">
+    </div>
+    <div class="swiper-slide">
+        <img src ="https://ias.r10s.jp/dst/ec/350099/19445300/1-1-1/974c3202e715187c6047ae409139d3ce.jpg">
+    </div>    
+    <div class="swiper-slide">
+        <img src ="https://ias.r10s.jp/dst/ec/229643/19427632/1-1-1/6f9324f938d9360d139fa9b7648e2bbb.jpg">
+    </div>
+    <div class="swiper-slide">
+        <img src ="https://ias.r10s.jp/dst/ec/238243/19445304/1-1-1/22d58c8d81da78e837da10b4900d915f.jpg">
+    </div>    
+  </div>
+  <!-- 페이징 버튼 처리 -->
+  <!-- <div class="swiper-pagination"></div> -->
+
+  <!-- 방향 버튼 상황에 따라 추가 삭제가능 -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
+
+    <div style="width: 100%; margin: 20px;">
+        <a style="color: red; margin: 20px; font-size: 18px;">
+            Pickup! 注目商品
         </a>
     </div>
-
-    <div class="有名ブランド・ショップ SlideBanner">
-        <a>
-            有名ブランド・ショップ SlideBanner
-        </a>
+    
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+          <img src ="https://ias.r10s.jp/dst/ec/30296/19308572/1-1-1/eb8a8e8ce4e872a79be90bf3ba66187f.jpg">
+      </div>
+      <div class="swiper-slide">
+          <img src ="https://ias.r10s.jp/dst/ec/354819/19308282/1-1-1/9486fb1d27cb363ce1b28e24cdd57cc9.jpg">
+      </div>
+      <div class="swiper-slide">
+          <img src ="https://ias.r10s.jp/dst/ec/330961/19362410/1-1-1/1f91b88024a2945b6fb3a539574f72f6.jpg">
+      </div>
+      <div class="swiper-slide">
+          <img src ="https://ias.r10s.jp/dst/ec/168770/19396548/1-1-1/aae1840506e113f36e076c73805d60ec.jpg">
+      </div>    
+      <div class="swiper-slide">
+          <img src ="https://ias.r10s.jp/dst/ec/114045/19353525/1-1-1/2229bfecd8452c8eebb605c70bf9450c.jpg">
+      </div>
+      <div class="swiper-slide">
+          <img src ="https://ias.r10s.jp/dst/ec/124260/19447590/1-1-1/b14380190470c46a39565168b9c2f013.jpg">
+      </div>    
     </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+  
 
-    <div class="あなたにおすすめの商品をチェック SlideBanner">
-        <a>
-            あなたにおすすめの商品をチェック SlideBanner
-        </a>
-    </div>
 
-    <div class="24時間タイムセール SlideBanner">
-        <a>
-            24時間タイムセール SlideBanner
-        </a>
-    </div>
-
-    <div class="有名ブランド特集 SlideBanner">
-        <a>
-            有名ブランド特集 SlideBanner
-        </a>
-    </div>
-
-    <div class="Rmagazine SlideBanner">
-        <a>
-            Rmagazine SlideBanner
-        </a>
-    </div>
-
-    <a style="float: left; margin: 10px; font-size: 20px;">
-        官公庁からのお知らせ
+  <div style="width: 100%; margin: 20px;">
+    <a style="color: red; margin: 20px; font-size: 18px;">
+        有名ブランド・ショップ
     </a>
+ </div>
+
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+          <img src ="https://papago.naver.com/97ec80a681e94540414daf2fb855ba3b.svg">
+      </div>
+      <div class="swiper-slide">
+        <img src ="https://papago.naver.com/97ec80a681e94540414daf2fb855ba3b.svg">
+    </div>
+      <div class="swiper-slide">
+          <img src ="https://papago.naver.com/97ec80a681e94540414daf2fb855ba3b.svg">
+      </div>
+      <div class="swiper-slide">
+        <img src ="https://papago.naver.com/97ec80a681e94540414daf2fb855ba3b.svg">
+    </div>    
+      <div class="swiper-slide">
+          <img src ="https://papago.naver.com/97ec80a681e94540414daf2fb855ba3b.svg">
+      </div>
+      <div class="swiper-slide">
+        <img src ="https://papago.naver.com/97ec80a681e94540414daf2fb855ba3b.svg">
+    </div>    
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+  <div style="width: 100%; margin: 20px;">
+    <a style="color: red; margin: 20px; font-size: 18px;">
+        あなたにおすすめの商品をチェック
+    </a>
+ </div>
+ <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src ="https://papago.naver.com/97ec80a681e94540414daf2fb855ba3b.svg">
+    </div>
+      <div class="swiper-slide">
+        <img src ="https://papago.naver.com/97ec80a681e94540414daf2fb855ba3b.svg">
+    </div>
+      <div class="swiper-slide">
+        <img src ="https://papago.naver.com/97ec80a681e94540414daf2fb855ba3b.svg">
+    </div>
+      <div class="swiper-slide">
+        <img src ="https://papago.naver.com/97ec80a681e94540414daf2fb855ba3b.svg">
+    </div>    
+      <div class="swiper-slide">
+        <img src ="https://papago.naver.com/97ec80a681e94540414daf2fb855ba3b.svg">
+    </div>
+      <div class="swiper-slide">
+        <img src ="https://papago.naver.com/97ec80a681e94540414daf2fb855ba3b.svg">
+    </div>    
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+
+    <div style="width: 100%; margin: 20px;">
+        <a style="color: red; margin: 20px; font-size: 18px;">
+            24時間タイムセール
+        </a>
+     </div>
+     <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+              <img src ="https://papago.naver.com/97ec80a681e94540414daf2fb855ba3b.svg">
+          </div>
+          <div class="swiper-slide">
+            <img src ="https://papago.naver.com/97ec80a681e94540414daf2fb855ba3b.svg">
+        </div>
+          <div class="swiper-slide">
+              <img src ="https://papago.naver.com/97ec80a681e94540414daf2fb855ba3b.svg">
+          </div>
+          <div class="swiper-slide">
+            <img src ="https://papago.naver.com/97ec80a681e94540414daf2fb855ba3b.svg">
+        </div>    
+          <div class="swiper-slide">
+              <img src ="https://papago.naver.com/97ec80a681e94540414daf2fb855ba3b.svg">
+          </div>
+          <div class="swiper-slide">
+            <img src ="https://papago.naver.com/97ec80a681e94540414daf2fb855ba3b.svg">
+        </div>    
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+
+    <div style="width: 100%; margin: 20px;">
+        <a style="color: red; margin: 20px; font-size: 18px;">
+            有名ブランド特集
+        </a>
+     </div>
+     <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src ="https://papago.naver.com/97ec80a681e94540414daf2fb855ba3b.svg">
+        </div>
+          <div class="swiper-slide">
+            <img src ="https://papago.naver.com/97ec80a681e94540414daf2fb855ba3b.svg">
+        </div>
+          <div class="swiper-slide">
+            <img src ="https://papago.naver.com/97ec80a681e94540414daf2fb855ba3b.svg">
+        </div>
+          <div class="swiper-slide">
+            <img src ="https://papago.naver.com/97ec80a681e94540414daf2fb855ba3b.svg">
+        </div>    
+          <div class="swiper-slide">
+            <img src ="https://papago.naver.com/97ec80a681e94540414daf2fb855ba3b.svg">
+        </div>
+          <div class="swiper-slide">
+            <img src ="https://papago.naver.com/97ec80a681e94540414daf2fb855ba3b.svg">
+        </div>    
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+
+    <div style="width: 100%; margin: 20px;">
+        <a style="color: red; margin: 20px; font-size: 18px;">
+            Rmagazine
+        </a>
+     </div>
+     <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src ="https://papago.naver.com/97ec80a681e94540414daf2fb855ba3b.svg">
+        </div>
+          <div class="swiper-slide">
+              <img src ="https://papago.naver.com/97ec80a681e94540414daf2fb855ba3b.svg">
+          </div>
+          <div class="swiper-slide">
+            <img src ="https://papago.naver.com/97ec80a681e94540414daf2fb855ba3b.svg">
+        </div>
+          <div class="swiper-slide">
+            <img src ="https://papago.naver.com/97ec80a681e94540414daf2fb855ba3b.svg">
+        </div>    
+          <div class="swiper-slide">
+            <img src ="https://papago.naver.com/97ec80a681e94540414daf2fb855ba3b.svg">
+        </div>
+          <div class="swiper-slide">
+              <img src ="https://papago.naver.com/97ec80a681e94540414daf2fb855ba3b.svg">
+          </div>    
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+    <div style="width: 100%;">
+        <a style="margin: 10px; font-size: 20px; margin-left: 410px;">
+            官公庁からのお知らせ
+        </a>
+    </div>
+
     <div class="bannerOuter">
         <div class="bannerOuter"></div>
         <div class="bannerInner">
-            <a href="https://globalexpress.rakuten.co.jp/?scid=rmp_ko_ich_top_unpaid&lang=ko">
-                <img src="https://r.r10s.jp/com/img/thumb/200309/message/flash/campaign/government/1216_MyNumber.png"
-                style="width: 100%; height: 200px;"
-                    alt="bannerInner">
-            </a>
+            <img src="https://r.r10s.jp/com/img/thumb/200309/message/flash/campaign/government/1216_MyNumber.png">
         </div>
     </div>
+
+    <div style="background-color: beige; 
+    font-size: 15px; 
+    text-align:center;
+    height: 40px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 600px;
+    margin-right: 600px"
+    >
+        <a style="font-size: 18px;">
+            楽天IDログイン時に送信される通知メールについて
+        </a>
+    </div>
+
+    <div style="background-color: beige; 
+    font-size: 15px; 
+    text-align:center;
+    height: 40px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 600px;
+    margin-right: 600px"
+    >
+        <a style="font-size: 18px;">
+            プラットフォームの透明性及び公正性の向上に関する取り組みについて
+        </a>
+    </div>
+
+
+    <div style="background-color: beige; 
+    font-size: 15px; 
+    text-align:center;
+    height: 40px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 600px;
+    margin-right: 600px"
+    >
+        <a style="font-size: 18px;">
+            楽天を装った不審なメール・WEBサイトにご注意ください
+        </a>
+    </div>
+
 
     <div class="RakutenNbaBanner">
         <div class="bannerOuter"></div>
         <div class="bannerInner">
-            <a href="https://rd.rakuten.co.jp/s/?R2=https%3A%2F%2Fac.ebis.ne.jp%2Ftr_set.php%3Fargument%3DZMhPE4GP%26ai%3Drgp_mno_004105&D2=3.8611.68708.911622.32391504&C3=db443cc19cc567407ff548167fb87879a0070e63">
-                <img src='https://r.r10s.jp/com/img/thumb/logo/pc_logo_footer_nba.svg' alt="bannerInner" >
+            <a
+                href="https://rd.rakuten.co.jp/s/?R2=https%3A%2F%2Fac.ebis.ne.jp%2Ftr_set.php%3Fargument%3DZMhPE4GP%26ai%3Drgp_mno_004105&D2=3.8611.68708.911622.32391504&C3=db443cc19cc567407ff548167fb87879a0070e63">
+                <img src='https://r.r10s.jp/com/img/thumb/logo/pc_logo_footer_nba.svg' alt="bannerInner">
             </a>
         </div>
     </div>
@@ -1164,6 +1373,149 @@
             © Rakuten Group, Inc.
         </a>
     </div>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+
+<style>
+html, body {
+      position: relative;
+      height: 100px;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 240px;
+    }
+    .swiper-slide {
+      background-image: 100%;
+      
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+.swiper-container-vertical>.swiper-pagination-bullets{
+    top: unset !important;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+
+}
+
+.swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet{
+  display : inline-block !important;
+  margin: 6px 2px !important;
+}
+
+
+.swiper-container2 {
+      width: 100%;
+      height: 240px;
+    }
+    .swiper-slide2 {
+      background-image: 100%;
+      
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+.swiper-container-vertical2>.swiper-pagination-bullets2{
+    top: unset !important;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+
+}
+
+.swiper-container-vertical2>.swiper-pagination-bullets .swiper-pagination-bullet2{
+  display : inline-block !important;
+  margin: 6px 2px !important;
+}
+
+</style>
+
+<script>
+    const swiper = new Swiper('.swiper-container', {
+  //기본 셋팅
+  //방향 셋팅 vertical 수직, horizontal 수평 설정이 없으면 수평
+  direction: 'horizontal',
+  //한번에 보여지는 페이지 숫자
+  slidesPerView: 9,
+  //페이지와 페이지 사이의 간격
+  spaceBetween: 0,
+  //드레그 기능 true 사용가능 false 사용불가
+  debugger: true,
+  //마우스 휠기능 true 사용가능 false 사용불가
+  mousewheel: true,
+  //반복 기능 true 사용가능 false 사용불가
+  loop: true,
+  //선택된 슬라이드를 중심으로 true 사용가능 false 사용불가 djqt
+  centeredSlides: true,
+  // 페이지 전환효과 slidesPerView효과와 같이 사용 불가
+  // effect: 'fade',
+  
+  
+  //자동 스크를링
+  autoplay: {
+    //시간 1000 이 1초
+    delay: 1000,
+    disableOnInteraction: false,
+   },
+  
+  //페이징
+  pagination: {
+    //페이지 기능
+    el: '.swiper-pagination',
+    //클릭 가능여부
+    clickable: true,
+  },
+
+  //방향표
+  navigation: {
+    //다음페이지 설정
+    nextEl: '.swiper-button-next',
+    //이전페이지 설정
+    prevEl: '.swiper-button-prev',
+  },
+  
+});
+
+
+
+
+</script>
+
+
+
 </body>
 
 </html>
